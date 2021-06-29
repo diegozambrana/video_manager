@@ -1,4 +1,4 @@
-# mrtr_videos
+# Public Video Manager
 
 ## SERVER
 
