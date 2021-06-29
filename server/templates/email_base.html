@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <style type="text/css">
+      body {
+        color: #000000;
+      }
+      body a {
+        color: #1188e6;
+        text-decoration: none;
+      }
+      p { margin: 0; padding: 0; }
+
+      @media screen and (max-width:480px) {
+        img[class="max-width"] {
+          height: auto !important;
+        }
+        a{
+          display: block !important;
+          width: auto !important;
+          font-size: 70%;
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+      }
+  </style>
+  <style>
+    body, p, div, span{ font-family: helvetica, arial, serif; }
+    html, body{
+        margin: 0;
+        padding: 0;
+    }
+  </style>
+  <style>
+    body, p, div, span { font-size: 14px; }
+    p,td{color: #333333;}
+  </style>
+</head>
+<body>
+    <div style="
+        background-color: #eee;
+        margin: 10px 3%;
+        width: 94%;
+        border-radius: 5px !important;
+        overflow: hidden;
+        box-shadow: 1px 1px 2px rgba(0,0,0,0.3);"
+    >
+        <div style="padding: 10px 10px 0">
+            <div
+                style="text-align:center;
+                padding-bottom:10px;
+                border-bottom: 1px solid #00a08f;"
+            >
+                Roku
+            </div>
+        </div>
+
+        <div style="padding:20px;">
+            {% block container %}
+            {% endblock %}
+        </div>
+
+        <div style="
+            background-color: #0a2c36;
+            width: 100%;
+            font-weight: 100;
+            font-size: 0;"
+        >
+            <div>
+                <p style="
+                   padding: 20px 10px;
+                   font-size:12px;
+                   text-align: center;
+                   color: #ffffff;"
+                >ROKU.TV</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+

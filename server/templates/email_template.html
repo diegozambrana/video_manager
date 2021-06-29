@@ -1,0 +1,12 @@
+{% extends 'email_base.html' %}
+
+{% block container %}
+<p style="margin:20px 0;">{{fullname}} con el correo <a href="mailto:{{email}}">{{email}}</a> envio el siguiente mensaje:</p>
+
+{% if link %}
+    <p style="margin:20px 0;">{{link}}</p>
+{% endif %}
+
+<p style="margin:20px 0;">{{message}}</p>
+{% endblock %}
+
