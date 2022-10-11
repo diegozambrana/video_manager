@@ -44,7 +44,7 @@ class Show(models.Model):
     update_at = models.DateField(auto_now=True)
     ads_url = models.CharField(
         max_length=56, default="", blank=True, null=True)
-    collection = models.ManyToManyField(Collection, blank=True, null=True)
+    collection = models.ManyToManyField(Collection, blank=True)
 
     def __str__(self):
         return self.name
@@ -88,7 +88,7 @@ class Movie(models.Model):
     update_at = models.DateField(auto_now=True)
     ads_url = models.CharField(
         max_length=56, default="", blank=True, null=True)
-    collection = models.ManyToManyField(Collection, blank=True, null=True)
+    collection = models.ManyToManyField(Collection, blank=True)
 
     def __str__(self):
         return self.title
